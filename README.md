@@ -47,7 +47,7 @@ The project requires the following C++ libraries:
   Ensure the DISPLAY environment variable is set to allow graphical output from WSL. Run the following command:
   
   ```bash
-  export DISPLAY=172.25.128.1:0.0  # Adjust the IP if necessary
+  export DISPLAY=XXX.XXX.XXX.XXX:0.0  # Adjust the IP to be your own (get this by running ipconfig in windows cmd)
   ```
 
 4. **Run the Application**:
@@ -56,3 +56,9 @@ The project requires the following C++ libraries:
   ```bash
   ./visualizer
   ```
+
+## Troubleshooting:
+
+* **Failed to open X11 display error**: ensure the DISPLAY variable has been properly set inside of .bashrc
+* **If `xhost` is not found**: install `x11-xserver-utils` by running: `sudo apt install x11-xserver-utils`
+* **If X server requires authorization**: Ensure that you disable access control in your X server or use `xhost +`.
