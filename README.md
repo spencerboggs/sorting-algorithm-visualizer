@@ -35,9 +35,24 @@ The project requires the following C++ libraries:
      ```
 
 2. **Clone the Repository and Build**:
-   Clone the repository and build the project using `g++`:
-   
-   ```bash
-   git clone https://github.com/spencerboggs/sorting-algorithm-visualizer.git
-   cd algorithm-visualizer
-   g++ main.cpp SortingAlgorithms.cpp Visualizer.cpp -o visualizer -lsfml-graphics -lsfml-window -lsfml-system
+   Clone the repository and build the project using `g++`: 
+
+  ```bash
+  git clone https://github.com/spencerboggs/sorting-algorithm-visualizer.git
+  cd algorithm-visualizer
+  g++ main.cpp SortingAlgorithms.cpp Visualizer.cpp -o visualizer -lsfml-graphics -lsfml-window -lsfml-system
+  ```
+
+4. **Set the DISPLAY Environment Variable (for WSL users)**:
+  Ensure the DISPLAY environment variable is set to allow graphical output from WSL. Run the following command:
+  
+  ```bash
+  export DISPLAY=172.25.128.1:0.0  # Adjust the IP if necessary
+  ```
+
+4. **Run the Application**:
+  After building the project, run the application:
+  
+  ```bash
+  ./visualizer
+  ```
