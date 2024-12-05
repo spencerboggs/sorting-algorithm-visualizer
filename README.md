@@ -39,7 +39,7 @@ The project requires the following C++ libraries:
 
   ```bash
   git clone https://github.com/spencerboggs/sorting-algorithm-visualizer.git
-  cd algorithm-visualizer
+  cd sorting-algorithm-visualizer
   g++ main.cpp SortingAlgorithms.cpp Visualizer.cpp -o visualizer -lsfml-graphics -lsfml-window -lsfml-system
   ```
 
